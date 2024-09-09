@@ -1,6 +1,3 @@
-# Ignore build directories
-build/
-test/
 
 # Ignore object files
 *.o

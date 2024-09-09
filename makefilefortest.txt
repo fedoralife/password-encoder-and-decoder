@@ -1,0 +1,32 @@
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -I./util
+
+# Directories
+BUILD_DIR = test
+SRC_DIR = src
+UTIL_DIR = util
+
+# Source and object files
+SRCS = $(SRC_DIR)/main.cpp $(UTIL_DIR)/hash.cpp
+OBJS = $(SRCS:$(SRC_DIR)/%.cpp=$(BUILD_DIR)/%.o)
+
+# Target executable
+TARGET = $(BUILD_DIR)/HASH
+
+# Default target
+all: $(TARGET)
+
+# Rule to link object files into the final executable
+$(TARGET): $(OBJS)
+	@mkdir -p $(BUILD_DIR)  # Create the build directory if it doesn't exist
+	$(CXX) -o $@ $(OBJS)
+
+# Rule to compile each .cpp file into a .o file
+$(BUILD_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(BUILD_DIR)  # Create the build directory if it doesn't exist
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Rule to clean up build files
+clean:
+	rm -rf $(BUILD_DIR)

@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.10)
+project(HashFunction)
+
+set(CMAKE_CXX_STANDARD 17)
+
+# Add the source files
+add_executable(hash_function src/main.cpp src/hash_function.cpp)
+
+# Add the test executable
+enable_testing()
+add_executable(tests test/test_main.cpp src/hash_function.cpp)
+add_test(NAME HashFunctionTest COMMAND tests)

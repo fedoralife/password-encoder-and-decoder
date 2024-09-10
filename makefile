@@ -1,11 +1,11 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -I./util
+CXXFLAGS = -I./Utility
 
 # Directories
-BUILD_DIR = build
-SRC_DIR = src
-UTIL_DIR = util
+BUILD_DIR = Build
+SRC_DIR = Source
+UTIL_DIR = Utility
 
 # Source and object files
 SRCS = $(SRC_DIR)/main.cpp $(UTIL_DIR)/hash.cpp

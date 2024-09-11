@@ -17,21 +17,14 @@ To build the project, use CMake. Follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/hash-function-cpp.git
-    cd hash-function-cpp
+   git clone https://github.com/fedoralife/password-encoder-and-decoder.git
     ```
 
-2. Create a build directory and navigate into it:
+2. Go to The scripts folder and run the bash script run.sh it will automatically build the project and run it:
     ```sh
-    mkdir build
-    cd build
+    cd Scripts
+    bash run.sh
     ```
-
-3. Configure the project using CMake:
-    ```sh
-    cmake ..
-    ```
-
 4. Build the project:
     ```sh
     cmake --build .
@@ -39,6 +32,7 @@ To build the project, use CMake. Follow these steps:
 
 ## Running the Tests
 
-After building, you can run the tests using the following command:
-```sh
-./tests
+-- Use the make_file_for_test for you to run a test executable file.
+1. First change  make_file_for_test.txt to maketestfile.
+2. Then build it via make.
+3. Finally run the test executable.

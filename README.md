@@ -25,10 +25,6 @@ To build the project, use CMake. Follow these steps:
     cd Scripts
     bash run.sh
     ```
-4. Build the project:
-    ```sh
-    cmake --build .
-    ```
 
 ## Running the Tests
 

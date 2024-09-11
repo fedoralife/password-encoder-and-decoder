@@ -16,6 +16,7 @@ Users information is stored on the hash table.
 ## Prerequisites
 
 - Linux with bash shell
+- Make
 - C++17 or later
 
 ## Building the Project

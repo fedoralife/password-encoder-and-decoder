@@ -4,7 +4,7 @@ This project implements a hash function in C++ for educational purposes. The has
 
 # How it works
 
-We have 3 option to create login user and exit the program as we are greeted.
+We have 3 option which are to create user, login user and exit the program as we are greeted.
 Users information is stored on the hash table.
 
 

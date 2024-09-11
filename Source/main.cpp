@@ -10,6 +10,8 @@ int main() {
     option();
     system("clear");
     std :: cout << "Thank you for using this software\n";
+    system("sleep 1");
+    system("clear");
     return 0;
 }
 

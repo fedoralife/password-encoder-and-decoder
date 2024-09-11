@@ -4,6 +4,15 @@
 
 #include "hash.h"
 
+void option();
+
+int main() {
+    option();
+    system("clear");
+    std :: cout << "Thank you for using this software\n";
+    return 0;
+}
+
 void option() {
     hash hash_obj;
     std::string password;
@@ -54,11 +63,4 @@ void option() {
             system("clear");
         }
     }
-}
-
-int main() {
-    option();
-    system("clear");
-    std :: cout << "Thank you for using this software\n";
-    return 0;
 }
